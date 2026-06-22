@@ -1,0 +1,9 @@
+name: Workflow1
+on: push
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Kasturi from GH200 session'
+    
+  
