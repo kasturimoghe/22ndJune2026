@@ -4,7 +4,17 @@ jobs:
   hello-world:
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'echoing the message'
-      - uses: actions/checkout@v7.0.0
+      - name: Echo Msg
+        run: echo 'echoing the message'
+
+      - name: CheckoutTask
+        uses: actions/checkout@v7.0.0
+
+      - name: List files
+        run: ls -la
+
+      - name: Generate ASCII ART
+        run: |
+             sudo apt-get update && sudo apt-get install figlet -y
     
   
