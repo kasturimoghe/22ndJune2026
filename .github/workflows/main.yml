@@ -17,5 +17,9 @@ jobs:
         run: |
              sudo apt-get update && sudo apt-get install figlet -y
              figlet -f slant "Hello Kasturi"
-    
+
+      - name: Running the script
+        run: |
+          chmod +x /scripts/displayRunnerInfo.sh
+          sh ./scripts/displayRunnerInfo.sh
   
