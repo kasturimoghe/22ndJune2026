@@ -16,5 +16,6 @@ jobs:
       - name: Generate ASCII ART
         run: |
              sudo apt-get update && sudo apt-get install figlet -y
+             figlet -f slant "Hello Kasturi"
     
   
