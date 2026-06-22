@@ -1,10 +1,11 @@
 name: Workflow1
 on: push
 jobs:
-  hello-world:
-    runs-on: ubuntu-latest
-    steps:
-      - name: SayHelloStep
-      - run: echo 'Kasturi from GH200 session'
+  job:
+    hello-world:
+        runs-on: ubuntu-latest
+      steps:
+        - name: "SayHelloStep"
+        - run: echo 'Kasturi from GH200 session'
     
   
